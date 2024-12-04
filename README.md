@@ -2,7 +2,7 @@
 
 ## Projektname: IoT Sensoren
 
-**Autor:** Julius Lange
+**Autor:** Julius Lange, Ian Risch
 
 **Datum:** 2024/11/29
 
