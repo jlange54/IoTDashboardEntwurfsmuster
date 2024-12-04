@@ -5,8 +5,7 @@ import observers.Observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LightSensor implements Sensor {
-    private List<Observer> observers = new ArrayList<>();
+public class LightSensor extends Sensor {
     private int lightLevel; // Helligkeit in Lumen
 
     public void setLightLevel(int lightLevel) {
@@ -18,20 +17,5 @@ public class LightSensor implements Sensor {
         return lightLevel;
     }
 
-    @Override
-    public void addObserver(Observer observer) {
-        observers.add(observer);
-    }
 
-    @Override
-    public void removeObserver(Observer observer) {
-        observers.remove(observer);
-    }
-
-    @Override
-    public void notifyObservers() {
-        for (Observer observer : observers) {
-            observer.update(this);
-        }
-    }
 }
